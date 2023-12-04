@@ -13,3 +13,17 @@ closeIcon.addEventListener('click', () => {
     menuIcon.style.display ="block"
     closeIcon.style.display ="none"
 });
+const navbar = document.querySelector('.nav_section');
+
+// Function to handle scroll event
+function handleScroll() {
+  // Check the scroll position
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled'); // Add the "scrolled" class
+  } else {
+    navbar.classList.remove('scrolled'); // Remove the "scrolled" class
+  }
+}
+
+// Listen for the scroll event
+window.addEventListener('scroll', handleScroll);
