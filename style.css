@@ -21,7 +21,7 @@ body{
  padding: 20px;
 }
 .title {
-   font-size: 20px;
+   font-size: 25px;
    margin-bottom: 20px;
 }
 .title2{
@@ -80,6 +80,10 @@ body{
     }
   } */
 @media only screen and (min-width: 780px) {
+    .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+     }
     .description{
         max-width: 600px;
     }
@@ -91,12 +95,12 @@ body{
 }
 
 .nav_close_icon img{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .nav_menu_icon img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .navbar{
     max-width: 1200px;
@@ -216,11 +220,11 @@ nav a{
 
 @media only screen and (min-width: 900px) {
     .desktop_nav_menu a{
-        font-size: 25px;
+        font-size: 23px;
       
       }
     .logo {
-        font-size: 30px;
+        font-size: 27px;
     }
     .navbar{
         /* max-width: 1200px;
