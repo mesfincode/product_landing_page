@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 *{
     margin: 0;
@@ -13,7 +13,41 @@ body{
     height: 100vh;
     width: 100%;
     color: white;
+    font-family: 'Playfair Display', serif;
 }
+/* utility classes */
+.section{
+ max-width: 1200px;
+ margin: auto;
+ padding: 20px;
+}
+.title {
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+.description{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-image: linear-gradient(to right bottom, #4376c3, #536dd1, #725ed9, #9746d7, #bd00cb);
+}
+
+.btn2{
+    padding: 10px 20px;
+    /* border: 1px solid red; */
+    display: inline-block;
+    background-image: linear-gradient(to right bottom, #4376c3, #3965bd, #3654b6, #3941ac, #3f2ba0);
+}
+@media only screen and (min-width: 780px) {
+    .description{
+        max-width: 600px;
+    }
+}
+
+/* Nav bar */
 .logo {
     font-size: 30px;
 }
@@ -23,11 +57,12 @@ body{
   height: 40px;
 }
 .nav_menu_icon img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 .navbar{
-   padding: 15px 25px;
+   padding-block: 25px;
+ 
   
 }
 .nav_close_icon{
@@ -90,12 +125,9 @@ nav a{
 }
 .desktop_nav_menu ul{
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
-.btn{
-    padding: 10px 20px;
-    background-image: linear-gradient(to right bottom, #4376c3, #536dd1, #725ed9, #9746d7, #bd00cb);
-}
+
 @media only screen and (min-width: 780px) {
 
    .mobile_nav_menu{
@@ -106,14 +138,31 @@ nav a{
    }
    .desktop_nav_menu{
     display: block;
-   
-    
    }
+}
 
-   @media only screen and (min-width: 780px) {
+@media only screen and (min-width: 900px) {
     .navbar{
-        width: 1200px;
+        max-width: 1200px;
         margin: auto;
     }
-   }
+}
+
+/* Hero Section */
+
+.hero_right img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 400px;
+}
+
+@media only screen and (min-width: 780px) {
+    .hero_container{
+        display: flex;
+    }
+    .hero_right img{
+        max-width: 700px;
+
+    }
 }
