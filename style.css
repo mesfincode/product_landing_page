@@ -27,6 +27,15 @@ body{
 .title2{
     color: black;
 }
+.section_title{
+    background-image: linear-gradient(to right bottom, #4376c3, #536dd1, #725ed9, #9746d7, #bd00cb);
+            background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-size: 200%;
+ -webkit-background-size: 200%;
+ text-align: center;
+}
 .description{
     font-size: 20px;
     margin-bottom: 20px;
@@ -49,8 +58,9 @@ body{
     text-align: center;
 }
 .gradient-text {
-    background-image: linear-gradient(to right bottom, #4376c3, #536dd1, #725ed9, #9746d7, #bd00cb);
-       background-clip: text;
+    background-image: radial-gradient(circle, #000000, #380023, #5f0056, #6d00a0, #0022ff);
+  
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
@@ -186,7 +196,13 @@ nav a{
 }
 
 @media only screen and (min-width: 780px) {
-
+    .desktop_nav_menu a{
+        font-size: 20px;
+      
+      }
+    .logo {
+        font-size: 25px;
+    }
    .mobile_nav_menu{
     display: none;
    }
@@ -199,6 +215,13 @@ nav a{
 }
 
 @media only screen and (min-width: 900px) {
+    .desktop_nav_menu a{
+        font-size: 25px;
+      
+      }
+    .logo {
+        font-size: 30px;
+    }
     .navbar{
         /* max-width: 1200px;
         margin: auto; */
